@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./api
+      dockerfile: ./XlsFilterService/Dockerfile
+  frontend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.client
